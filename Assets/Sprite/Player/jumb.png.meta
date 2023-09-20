@@ -1,0 +1,1762 @@
+fileFormatVersion: 2
+guid: 470dfc254f913594eb6d64ae75c2b4cb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9114202556735134241
+    second: 001_jump_0
+  - first:
+      213: 4221240542453117958
+    second: 001_jump_1
+  - first:
+      213: 625860610720932487
+    second: 001_jump_2
+  - first:
+      213: 3523357379933079629
+    second: 001_jump_3
+  - first:
+      213: -8596044663396146486
+    second: 001_jump_4
+  - first:
+      213: 7766096164885648235
+    second: 001_jump_5
+  - first:
+      213: -221532185665806817
+    second: 001_jump_6
+  - first:
+      213: -2645646650756458663
+    second: 001_jump_7
+  - first:
+      213: 6988379754232823971
+    second: 001_jump_8
+  - first:
+      213: 1683834108819331414
+    second: 001_jump_9
+  - first:
+      213: 6064178719993600600
+    second: 001_jump_10
+  - first:
+      213: 2472163329611532525
+    second: 001_jump_11
+  - first:
+      213: -3165558793767378419
+    second: 001_jump_12
+  - first:
+      213: 5786448668047499669
+    second: 001_jump_13
+  - first:
+      213: -1128452367775406630
+    second: 001_jump_14
+  - first:
+      213: 1549108345473997953
+    second: 001_jump_15
+  - first:
+      213: 8546767250485949977
+    second: 001_jump_16
+  - first:
+      213: 7718823525455001438
+    second: 001_jump_17
+  - first:
+      213: 3241160507509925713
+    second: 001_jump_18
+  - first:
+      213: -7144980770290666002
+    second: 001_jump_19
+  - first:
+      213: -7798761364044411119
+    second: 001_jump_20
+  - first:
+      213: -4200744471105117014
+    second: 001_jump_21
+  - first:
+      213: -2546569432375483509
+    second: 001_jump_22
+  - first:
+      213: -2593606421509952089
+    second: 001_jump_23
+  - first:
+      213: 2271080002275288218
+    second: 001_jump_24
+  - first:
+      213: 8150424015197610105
+    second: 001_jump_25
+  - first:
+      213: 837937211342497361
+    second: 001_jump_26
+  - first:
+      213: -5622323336855697055
+    second: 001_jump_27
+  - first:
+      213: -7732624904553514781
+    second: 001_jump_28
+  - first:
+      213: 3366633695454195772
+    second: 001_jump_29
+  - first:
+      213: -5156514977379621497
+    second: 001_jump_30
+  - first:
+      213: 6145213700378084583
+    second: 001_jump_31
+  - first:
+      213: 6108321960906106380
+    second: 001_jump_32
+  - first:
+      213: 3783802579322338861
+    second: 001_jump_33
+  - first:
+      213: -2538966895637739013
+    second: 001_jump_34
+  - first:
+      213: -1405247069241052193
+    second: 001_jump_35
+  - first:
+      213: -4930467523365018115
+    second: 001_jump_36
+  - first:
+      213: -7417247119052711875
+    second: 001_jump_37
+  - first:
+      213: 9108005026504243730
+    second: 001_jump_38
+  - first:
+      213: 3410505507434650709
+    second: 001_jump_39
+  - first:
+      213: 4416189965293721309
+    second: 001_jump_40
+  - first:
+      213: -2029763084082002710
+    second: 001_jump_41
+  - first:
+      213: -6136193618735109045
+    second: 001_jump_42
+  - first:
+      213: -8115319712057032983
+    second: 001_jump_43
+  - first:
+      213: 4176211210457991390
+    second: 001_jump_44
+  - first:
+      213: 7416874720079056826
+    second: 001_jump_45
+  - first:
+      213: -2104138660335823819
+    second: 001_jump_46
+  - first:
+      213: -2526837041037885326
+    second: 001_jump_47
+  - first:
+      213: -4084849350089397005
+    second: 001_jump_48
+  - first:
+      213: -5900666461143171812
+    second: 001_jump_49
+  - first:
+      213: 8997578858755286425
+    second: 001_jump_50
+  - first:
+      213: 4337972451501577924
+    second: 001_jump_51
+  - first:
+      213: 4081869134426036897
+    second: 001_jump_52
+  - first:
+      213: 5239781697185573371
+    second: 001_jump_53
+  - first:
+      213: 8980053975697065995
+    second: 001_jump_54
+  - first:
+      213: 8568708744317499222
+    second: 001_jump_55
+  - first:
+      213: 7968338374564930328
+    second: 001_jump_56
+  - first:
+      213: 4281637774074219296
+    second: jump_0
+  - first:
+      213: -7862396843884538191
+    second: jump_1
+  - first:
+      213: 8276514422256456541
+    second: jump_2
+  - first:
+      213: -3697937850672776721
+    second: jump_3
+  - first:
+      213: 4987614716155920338
+    second: jump_4
+  - first:
+      213: -1184746109927277663
+    second: jump_5
+  - first:
+      213: -4845626741048118468
+    second: jump_6
+  - first:
+      213: 7014594740173477433
+    second: jump_7
+  - first:
+      213: 1578323387413840467
+    second: jump_8
+  - first:
+      213: 7655840988501763603
+    second: jump_9
+  - first:
+      213: -9197958414588387290
+    second: jump_10
+  - first:
+      213: -5086767228222736262
+    second: jump_11
+  - first:
+      213: 6181903233876262169
+    second: jump_12
+  - first:
+      213: 6085027727657474495
+    second: jump_13
+  - first:
+      213: -7558048255918937315
+    second: jump_14
+  - first:
+      213: 1978480726327293745
+    second: jump_15
+  - first:
+      213: -6132592246010354800
+    second: jump_16
+  - first:
+      213: -418148235218303146
+    second: jump_17
+  - first:
+      213: 4014067163673467108
+    second: jump_18
+  - first:
+      213: 1506671210523702264
+    second: jump_19
+  - first:
+      213: -698269485225333976
+    second: jump_20
+  - first:
+      213: 58559517799479068
+    second: jump_21
+  - first:
+      213: 5786932790349076467
+    second: jump_22
+  - first:
+      213: -2979544516068205554
+    second: jump_23
+  - first:
+      213: -2046193111815958161
+    second: jump_24
+  - first:
+      213: 6484181237898064512
+    second: jump_25
+  - first:
+      213: -3225056911852106339
+    second: jump_26
+  - first:
+      213: 6577321620887939973
+    second: jump_27
+  - first:
+      213: 3640988351627517149
+    second: jump_28
+  - first:
+      213: -7335557793373392994
+    second: jump_29
+  - first:
+      213: -8316701790580645646
+    second: jump_30
+  - first:
+      213: 2798516111748293662
+    second: jump_31
+  - first:
+      213: 382114916140565309
+    second: jump_32
+  - first:
+      213: -8569130885922760573
+    second: jump_33
+  - first:
+      213: -2210091775306831888
+    second: jump_34
+  - first:
+      213: -2390990006331752667
+    second: jump_35
+  - first:
+      213: 1163623551245970900
+    second: jump_36
+  - first:
+      213: 8782299771862856864
+    second: jump_37
+  - first:
+      213: -1642604694477414606
+    second: jump_38
+  - first:
+      213: 4557966941776416813
+    second: jump_39
+  - first:
+      213: -468062509844781452
+    second: jump_40
+  - first:
+      213: 8792727220414031832
+    second: jump_41
+  - first:
+      213: -4019479287016693394
+    second: jump_42
+  - first:
+      213: 4299268544362008819
+    second: jump_43
+  - first:
+      213: 6915982704474624033
+    second: jump_44
+  - first:
+      213: 968882803572095880
+    second: jump_45
+  - first:
+      213: -8151224023099486137
+    second: jump_46
+  - first:
+      213: -5518532394716831622
+    second: jump_47
+  - first:
+      213: -8673869656153820657
+    second: jump_48
+  - first:
+      213: -502782083493106410
+    second: jump_49
+  - first:
+      213: 6269712752928560008
+    second: jump_50
+  - first:
+      213: 5076106088197164608
+    second: jump_51
+  - first:
+      213: -3594697368027660631
+    second: jump_52
+  - first:
+      213: 6246700890586870840
+    second: jump_53
+  - first:
+      213: -2691006794766528024
+    second: jump_54
+  - first:
+      213: -8753627081805103990
+    second: jump_55
+  - first:
+      213: -5144560166212167377
+    second: jump_56
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jumb_0
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1534
+        width: 130
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c7430b6bceed340a755fa8bfbb08c4
+      internalID: 539050647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_1
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 1542
+        width: 127
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8945c2a7c51b64bbd3c5c3a2fbd341
+      internalID: 1169457373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_2
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 1544
+        width: 127
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 287524d95037c4a4f8d98d64313e39ca
+      internalID: -720165761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_3
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 1552
+        width: 138
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177f878cf6070424fa1cd7d4360d9be4
+      internalID: -1069801950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_4
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 1560
+        width: 146
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18cd6f047fe2cd5478d93ba801add6b4
+      internalID: -1191157727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_5
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 1560
+        width: 152
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee80b376a60f2c4e869aae231167bbb
+      internalID: -174000830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_6
+      rect:
+        serializedVersion: 2
+        x: 2262
+        y: 1567
+        width: 154
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a246f31b0981e754e9b238029daff038
+      internalID: 830126429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_7
+      rect:
+        serializedVersion: 2
+        x: 2616
+        y: 1568
+        width: 160
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ccafaa0edfd68945894554c0b4fad15
+      internalID: -2119871740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_8
+      rect:
+        serializedVersion: 2
+        x: 2981
+        y: 1568
+        width: 156
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3adf57db2912a0e4aa5d51e1a7ea4c1e
+      internalID: -401250619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_9
+      rect:
+        serializedVersion: 2
+        x: 3336
+        y: 1568
+        width: 160
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb0bb5ed9d43bd41b3c96e1b843284b
+      internalID: -899261398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_10
+      rect:
+        serializedVersion: 2
+        x: 3701
+        y: 1567
+        width: 155
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47e27da1e80478743b711561dc9bb7a9
+      internalID: 667878352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1264
+        width: 161
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542d27e2c309db04a84b73c82d4d7fe9
+      internalID: 135600293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_12
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1263
+        width: 161
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f32a9ae47a8b2f449420a787ff037d9
+      internalID: 86276672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_13
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1259
+        width: 158
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0c6054e46308748a5e52645bfbd422
+      internalID: -2008401035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_14
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 1254
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0218130edd50e304c92c45a5335ccea7
+      internalID: -1709064142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_15
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 1248
+        width: 160
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc2c601586d1244e818b0af5e9806ee
+      internalID: -135295859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_16
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 1240
+        width: 161
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5136efde10f1a28478fa899f03348a60
+      internalID: 1305495131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_17
+      rect:
+        serializedVersion: 2
+        x: 2256
+        y: 1232
+        width: 163
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f457ef61e12e6084f9a803fc958f6d8c
+      internalID: -1062033673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_18
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 1224
+        width: 165
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1fab2613a54ab44bfd14893126dc97
+      internalID: -1901694463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_19
+      rect:
+        serializedVersion: 2
+        x: 2998
+        y: 1232
+        width: 138
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4819ffd032d026b49b19c542e67d4b8f
+      internalID: 457806340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_20
+      rect:
+        serializedVersion: 2
+        x: 3357
+        y: 1240
+        width: 139
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507c7ffcd9bdfc5418e1fb24619e4190
+      internalID: 1240066015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_21
+      rect:
+        serializedVersion: 2
+        x: 3712
+        y: 1247
+        width: 137
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd64d6fe951a5bc46830cdd5c354c673
+      internalID: 1399112328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_22
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 952
+        width: 138
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb7e717b8fe9cd41b9092121114491e
+      internalID: 26376249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_23
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 958
+        width: 141
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e8c085235ca844e9298721e1874fe3
+      internalID: -2022363563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_24
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 962
+        width: 152
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1a319cb6e41924ca8d4591e0589151
+      internalID: 246275792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_25
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 966
+        width: 148
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06ce8511629c2145aa62de5cb51b221
+      internalID: -1791405931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_26
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 968
+        width: 152
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2354a7e0d3528542af1caa06b25d316
+      internalID: 1218203143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_27
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 968
+        width: 152
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab2eac0c5f567c449212ab6dfa6dbf5
+      internalID: -1823907756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_28
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 968
+        width: 152
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d4c09f32fc14a4f954ae4a22e17e55
+      internalID: -1262969636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_29
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 968
+        width: 152
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7916cfb1996874ba5830ce04142c1b
+      internalID: -1150443793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_30
+      rect:
+        serializedVersion: 2
+        x: 2984
+        y: 972
+        width: 152
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8854123a33f89d4aa741a4ea5085616
+      internalID: -1106609309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_31
+      rect:
+        serializedVersion: 2
+        x: 3344
+        y: 968
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f55b886791e2bd4ea8a29d503b97733
+      internalID: 1339944810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_32
+      rect:
+        serializedVersion: 2
+        x: 3704
+        y: 968
+        width: 152
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5da1229753c80d4b87f11bc7aa354da
+      internalID: 1837595616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_33
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 664
+        width: 150
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643dc13a8fdbdaf4fae8e51496e4c143
+      internalID: -1734358540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_34
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 659
+        width: 149
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2c0886bafd4df4fa4e8329a2ae6e5e
+      internalID: -1125870228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_35
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 654
+        width: 148
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbefb79e338335f439404e1ef8f59979
+      internalID: 810413964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_36
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 647
+        width: 146
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1a1f10224634d49a3fa3678f7a0f1a
+      internalID: 1370817274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_37
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 640
+        width: 144
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c67212741b6ce4dab592c1ef87945b
+      internalID: -171079434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_38
+      rect:
+        serializedVersion: 2
+        x: 1912
+        y: 632
+        width: 131
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4171c49127473134aa8b9e9baab917fc
+      internalID: 1289063918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_39
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 640
+        width: 131
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722b0544afeb32e4d97ebac14aa760be
+      internalID: 769343732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_40
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 648
+        width: 138
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a4fe91b2df44784a8e27bd619494c6d
+      internalID: 1204456908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_41
+      rect:
+        serializedVersion: 2
+        x: 2984
+        y: 655
+        width: 147
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb50ac06e54806341a0c9f572cc3d4e9
+      internalID: 1189466023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_42
+      rect:
+        serializedVersion: 2
+        x: 3342
+        y: 656
+        width: 154
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591019590431b3d4b9c187db520217da
+      internalID: -2140996245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_43
+      rect:
+        serializedVersion: 2
+        x: 3700
+        y: 663
+        width: 156
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7043d99bf41ea4946810ad80167bb776
+      internalID: -1111396485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_44
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 360
+        width: 157
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15768829f85a5174aa8723dc662ab027
+      internalID: 1883241766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_45
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 367
+        width: 161
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e83131ebc788c54cbbcb94f35925815
+      internalID: -781019664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_46
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 368
+        width: 161
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb67a6909e120614aa381c0df4ff0a0c
+      internalID: 1437064000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_47
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 368
+        width: 160
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36deaf610d177b14a9f0e49f7b268638
+      internalID: -1911399542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_48
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 368
+        width: 161
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc138aba46aed43468353644324d044e
+      internalID: 5274048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_49
+      rect:
+        serializedVersion: 2
+        x: 1896
+        y: 368
+        width: 162
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb3db3ef8cc0c8a4bbd87df00cd0c47b
+      internalID: -1957228861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_50
+      rect:
+        serializedVersion: 2
+        x: 2256
+        y: 366
+        width: 162
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a637cd0b6cc629940a9b1dc04ab67ea9
+      internalID: 840540608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_51
+      rect:
+        serializedVersion: 2
+        x: 2616
+        y: 360
+        width: 168
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fd38726593004a4f894b4498bf48cba
+      internalID: 462635241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_52
+      rect:
+        serializedVersion: 2
+        x: 2977
+        y: 359
+        width: 162
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05d3842500d67148b8d141f32d6e3fa
+      internalID: -1097024832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_53
+      rect:
+        serializedVersion: 2
+        x: 3337
+        y: 352
+        width: 167
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f28e07c94f8484a83f708d65d589f1
+      internalID: 834222838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_54
+      rect:
+        serializedVersion: 2
+        x: 3696
+        y: 347
+        width: 163
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81276ffc6fa12f54ea4c8a44bbbc9431
+      internalID: -1438549693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_55
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 39
+        width: 163
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509a19e7ddea6c8499bf4acccc1a321f
+      internalID: 863916093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumb_56
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 30
+        width: 162
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd934b935a32484e8b9752bd8574563
+      internalID: -1879266120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      jumb_0: 539050647
+      jumb_1: 1169457373
+      jumb_10: 667878352
+      jumb_11: 135600293
+      jumb_12: 86276672
+      jumb_13: -2008401035
+      jumb_14: -1709064142
+      jumb_15: -135295859
+      jumb_16: 1305495131
+      jumb_17: -1062033673
+      jumb_18: -1901694463
+      jumb_19: 457806340
+      jumb_2: -720165761
+      jumb_20: 1240066015
+      jumb_21: 1399112328
+      jumb_22: 26376249
+      jumb_23: -2022363563
+      jumb_24: 246275792
+      jumb_25: -1791405931
+      jumb_26: 1218203143
+      jumb_27: -1823907756
+      jumb_28: -1262969636
+      jumb_29: -1150443793
+      jumb_3: -1069801950
+      jumb_30: -1106609309
+      jumb_31: 1339944810
+      jumb_32: 1837595616
+      jumb_33: -1734358540
+      jumb_34: -1125870228
+      jumb_35: 810413964
+      jumb_36: 1370817274
+      jumb_37: -171079434
+      jumb_38: 1289063918
+      jumb_39: 769343732
+      jumb_4: -1191157727
+      jumb_40: 1204456908
+      jumb_41: 1189466023
+      jumb_42: -2140996245
+      jumb_43: -1111396485
+      jumb_44: 1883241766
+      jumb_45: -781019664
+      jumb_46: 1437064000
+      jumb_47: -1911399542
+      jumb_48: 5274048
+      jumb_49: -1957228861
+      jumb_5: -174000830
+      jumb_50: 840540608
+      jumb_51: 462635241
+      jumb_52: -1097024832
+      jumb_53: 834222838
+      jumb_54: -1438549693
+      jumb_55: 863916093
+      jumb_56: -1879266120
+      jumb_6: 830126429
+      jumb_7: -2119871740
+      jumb_8: -401250619
+      jumb_9: -899261398
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
