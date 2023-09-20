@@ -62,6 +62,7 @@ public class playerControll : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed); //  play nhay len cao
             animator.SetBool("isJump", true);
         }
+        Debug.Log(rb.velocity.y);
         if (rb.velocity.y < 0)   // luc huong xuong dat
         {
             rb.velocity -= newtonPower * vecGravity * Time.deltaTime;
