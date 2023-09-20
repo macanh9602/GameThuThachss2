@@ -26,7 +26,7 @@ public class playerControll : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         float xInput = UnityEngine.Input.GetAxisRaw("Horizontal"); // 
         Move(xInput);
