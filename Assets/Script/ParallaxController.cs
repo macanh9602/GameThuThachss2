@@ -52,7 +52,7 @@ public class ParallaxController : MonoBehaviour
         for (int i = 0; i < backCount; i++)
         {
             backSpeed[i] = 1 - (backgrounds[i].transform.position.z - cam.position.z) / farthestBack; // luu vao mang , background can gan toc do cang nhanh
-            Debug.Log(backSpeed[i]);
+            //Debug.Log(backSpeed[i]);
 
         }
     }
@@ -64,7 +64,7 @@ public class ParallaxController : MonoBehaviour
         transform.position = new Vector3(cam.position.x, transform.position.y, 0); // di theo cam
         for (int i = 0; i < backgrounds.Length; i++)
         {
-            float speed = backSpeed[i] * parallaxSpeed;
+            float speed = backSpeed[i] * parallaxSpeed * 0.5f;
             //mat[i].SetTexture("_MainTex", texture);
             backgrounds[i].GetComponent<Renderer>().material.SetTextureOffset("_MainTex", new Vector2(distance, 0) * speed);
             //
