@@ -52,7 +52,6 @@ public class ParallaxController : MonoBehaviour
         for (int i = 0; i < backCount; i++)
         {
             backSpeed[i] = 1 - (backgrounds[i].transform.position.z - cam.position.z) / farthestBack; // luu vao mang , background can gan toc do cang nhanh
-            Debug.Log(backSpeed[i]);
 
         }
     }

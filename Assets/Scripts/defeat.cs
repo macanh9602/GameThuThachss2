@@ -1,10 +1,9 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class defeat : MonoBehaviour
 {
-    [SerializeField] private GameObject Panel_loss;
     [SerializeField] private CanVas Oj_canvas;
     private playerControll p;
     private void Start()
@@ -19,10 +18,13 @@ public class defeat : MonoBehaviour
              collision.gameObject.CompareTag("gear")
             )
         {
-            Panel_loss.SetActive(true);
-            Oj_canvas.setTxtLoss();
             p.isDie();
-          //  Destroy(gameObject, 2);
+            Invoke(nameof(GetPanelLoss), 1f);
+            //  Destroy(gameObject, 2);
         }
+    }
+    public void GetPanelLoss()
+    {
+        Oj_canvas.Panel_endGame("Thử thách thất bại !");
     }
 }
