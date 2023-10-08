@@ -4,11 +4,14 @@ using UnityEngine;
 using DG.Tweening;
 public class ThangMay : MonoBehaviour
 {
-
+    [SerializeField] Vector3 end;
+    [SerializeField] float timeToMove;
+    [SerializeField] LoopType loopType;
+    [SerializeField] Ease ease;
     // Start is called before the first frame update
     void Start()
     {
-        transform.DOMoveX(3f, 2f).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.InOutCubic);
+        transform.DOMove(end, timeToMove).SetLoops(-1, loopType).SetEase(ease);
 
     }
 
@@ -33,5 +36,5 @@ public class ThangMay : MonoBehaviour
             collision.transform.parent = null;
         }
     }
-
+    //
 }

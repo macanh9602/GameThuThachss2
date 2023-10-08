@@ -21,6 +21,8 @@ public class Movement : MonoBehaviour
     CircleCollider2D thisCollision;
     BoxCollider2D footCollision;
 
+    bool onState = false;
+    public DOPathController dongdoc;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +45,7 @@ public class Movement : MonoBehaviour
 
         animator.SetFloat("yVelocity", rb.velocity.y); // hoat canh nhay len xuong theo van toc vua y
         Jump();
+        //DongDoc();
     }
     void Move(float _xInput)
     {
@@ -118,6 +121,7 @@ public class Movement : MonoBehaviour
           }
 
       }*/
+     
 }
 
 
