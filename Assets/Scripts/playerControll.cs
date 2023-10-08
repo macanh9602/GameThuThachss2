@@ -1,10 +1,11 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class playerControll : MonoBehaviour
 {
-  
+    public musicControll musicControll;
     private Rigidbody2D rb;
     private Animator animator;
     private Vector2 vecGravity;
@@ -16,6 +17,9 @@ public class playerControll : MonoBehaviour
 
     public bool onState = false;
     public DOPathController dongdoc;
+
+
+    [SerializeField] private SpriteRenderer sprite;
 
     // Start is called before the first frame update
     void Start()
@@ -32,11 +36,31 @@ public class playerControll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         float xInput = UnityEngine.Input.GetAxisRaw("Horizontal"); // 
         Move(xInput);
         animator.SetFloat("yVelocity", rb.velocity.y); // hoat canh nhay len xuong theo van toc vua y
         Jump();
         DongDoc();
+
+        if (GameManage.instance.isPlay)
+        {
+            float xInput = UnityEngine.Input.GetAxisRaw("Horizontal"); // 
+            Move(xInput);
+            animator.SetFloat("yVelocity", rb.velocity.y); // hoat canh nhay len xuong theo van toc vua y
+            Jump();
+        }
+        else
+        {
+            musicControll.runningSound(false);
+        }
+    }
+    public void ResetPlayer()
+    {
+        transform.position = new Vector2(16, 1);
+        animator.SetBool("isDie", false);
+       transform.DOScale(new Vector3(1f, 1f, 1f), 1f);
+
     }
     void Move(float _xInput)
     {
@@ -48,8 +72,18 @@ public class playerControll : MonoBehaviour
                 rb.velocity = new Vector2(_xInput * speed, rb.velocity.y);
                 bool IsMove = Mathf.Abs(rb.velocity.x) > 0;
                 animator.SetBool("isWalk", IsMove);
-                FlipFace();     
+            if (_xInput != 0)
+            {
+                musicControll.runningSound(true);
+            }
+            else
+            {
+                musicControll.runningSound(false);
+
+            }
+            FlipFace();     
         }
+
     }
     void FlipFace()
     {

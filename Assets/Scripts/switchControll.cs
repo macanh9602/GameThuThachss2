@@ -4,6 +4,7 @@ using UnityEngine.UIElements;
 
 public class switchControll : MonoBehaviour
 {
+    public musicControll musicControll;
     private int flat = 1;
     private bool isElevator;
     [SerializeField] private Animator animator_Exit;
@@ -32,31 +33,42 @@ public class switchControll : MonoBehaviour
             {
                 isActive_Object.SetActive(true);
                 gameObject.SetActive(false);
-
+                musicControll.switchSound(true);
+               // musicControll.switchSound(false);
             }
             else if (select_function == 1)
             {
                 isActive_Object.SetActive(true);
                 gameObject.SetActive(false);
+                musicControll.switchSound(true);
+                // musicControll.switchSound(false);
             }
             else if(select_function == 2)
             {
                 isActive_Object.SetActive(false);
                 gameObject.SetActive(false);
+                musicControll.switchSound(true);
+                // musicControll.switchSound(false);
             }
             else if(select_function == 3)
             {
                 box2D_Exit = isActive_Object.GetComponent<BoxCollider2D>(); // gan component cua Oj_exit cho Box2d
                 animator_Exit.SetBool("isExit", true);                // Dieu kien animation  open_exit hoat dong
                 Destroy(box2D_Exit);                                   // xoa component dc gan  Oj_exit                      
-                Invoke(nameof(ExitClose), 5);              //  sau 5 giay se goi ham ExitClose                Debug.Log("Chức năng đang bảo trì");
+                Invoke(nameof(ExitClose), 5);              //  sau 5 giay se goi ham ExitClose
+                                                           //  Debug.Log("Chức năng đang bảo trì");
+                musicControll.switchSound(true);
+                // musicControll.switchSound(false);
             }
             else if (select_function == 4)
             {
-                if(isElevator)
+                isActive_Object.transform.position = new Vector3(7, 1, 0);
+                isActive_Object.SetActive(true);
+                if (isElevator)
                 InvokeRepeating(nameof(ActiveElevator), 0, 3);
                 isElevator = false;
                 gameObject.SetActive(false);
+                musicControll.switchSound(true);
             }
         }
     }
