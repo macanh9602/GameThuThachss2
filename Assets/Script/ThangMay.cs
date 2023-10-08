@@ -36,5 +36,5 @@ public class ThangMay : MonoBehaviour
             collision.transform.parent = null;
         }
     }
-
+    //
 }
