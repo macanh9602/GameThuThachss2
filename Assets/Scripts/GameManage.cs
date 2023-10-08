@@ -10,6 +10,7 @@ public class GameManage : MonoBehaviour
     public GameObject[] gameObjectAppear;
     public ScoreControll scoreControll;
     public playerControll player;
+    public bridgeControll[] bridgeControll;
     private void Awake()
     {   if(instance==null)
         {
@@ -32,6 +33,7 @@ public class GameManage : MonoBehaviour
         {
             gameObjectAppear[i].SetActive(false);
         }
+
     }
     public void end_game()
     {
