@@ -59,14 +59,14 @@ public class DOPathController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<playerControll>().dongdoc = this;
+            collision.gameObject.GetComponent<Movement>().dongdoc = this;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<playerControll>().dongdoc = null;
+            collision.gameObject.GetComponent<Movement>().dongdoc = null;
         }
     }
 

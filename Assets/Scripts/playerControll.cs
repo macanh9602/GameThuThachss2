@@ -37,11 +37,11 @@ public class playerControll : MonoBehaviour
     void Update()
     {
 
-        float xInput = UnityEngine.Input.GetAxisRaw("Horizontal"); // 
-        Move(xInput);
-        animator.SetFloat("yVelocity", rb.velocity.y); // hoat canh nhay len xuong theo van toc vua y
-        Jump();
-        DongDoc();
+        //float xInput = UnityEngine.Input.GetAxisRaw("Horizontal"); // 
+        //Move(xInput);
+        //animator.SetFloat("yVelocity", rb.velocity.y); // hoat canh nhay len xuong theo van toc vua y
+        //Jump();
+        //DongDoc();
 
         if (GameManage.instance.isPlay)
         {

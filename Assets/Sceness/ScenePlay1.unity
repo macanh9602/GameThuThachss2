@@ -2012,8 +2012,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 818443078}
-  textInput: {fileID: 723175770}
-  BGtalk: {fileID: 957923224}
+  textInput: {fileID: 0}
+  BGtalk: {fileID: 0}
 --- !u!1 &859759554
 GameObject:
   m_ObjectHideFlags: 0
@@ -2316,12 +2316,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1142059960}
   - component: {fileID: 1142059959}
-  - component: {fileID: 1142059958}
   - component: {fileID: 1142059957}
   - component: {fileID: 1142059956}
   - component: {fileID: 1142059955}
   - component: {fileID: 1142059954}
   - component: {fileID: 1142059953}
+  - component: {fileID: 1142059961}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -2509,23 +2509,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1142059958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1142059952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2e54ca05b180354794fe035a1d268ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 6
-  jumpSpeed: 11.5
-  newtonPower: 1
-  onState: 0
-  dongdoc: {fileID: 0}
 --- !u!114 &1142059959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2538,7 +2521,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47b474c6f841eea4ca4f19e13e35bd73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel_loss: {fileID: 0}
   Oj_canvas: {fileID: 0}
 --- !u!4 &1142059960
 Transform:
@@ -2555,6 +2537,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 10, z: 0}
+--- !u!114 &1142059961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142059952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b49c28ecf88db1c43aa9d8c090be99b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicControll: {fileID: 0}
+  speed: 10
+  jumpSpeed: 15
+  newtonPower: 0
+  onState: 0
+  dongdoc: {fileID: 0}
+  sprite: {fileID: 0}
 --- !u!1 &1163214511
 GameObject:
   m_ObjectHideFlags: 0
@@ -3513,7 +3514,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 5
-      m_TileSpriteIndex: 5
+      m_TileSpriteIndex: 12
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -3523,7 +3524,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 5
-      m_TileSpriteIndex: 0
+      m_TileSpriteIndex: 13
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -3569,21 +3570,11 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741826
-  - first: {x: 19, y: -4, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 5
-      m_TileSpriteIndex: 12
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741826
   - first: {x: 20, y: -4, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 5
-      m_TileSpriteIndex: 6
+      m_TileSpriteIndex: 12
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -4321,10 +4312,10 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: ad03e0b9d97e7db44958e9781926f1da, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 45b4c28f270185b4f801286a31a78fbf, type: 2}
-  - m_RefCount: 16
+  - m_RefCount: 15
     m_Data: {fileID: 11400000, guid: 89ce737bf35c48f4fa74b809e26821b5, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 2
+  - m_RefCount: 1
     m_Data: {fileID: 972352741, guid: 14a50e43a79615e4fa8500e659f9387b, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -600897328, guid: 14a50e43a79615e4fa8500e659f9387b, type: 3}
@@ -4334,9 +4325,9 @@ Tilemap:
     m_Data: {fileID: -1888895611, guid: 14a50e43a79615e4fa8500e659f9387b, type: 3}
   - m_RefCount: 18
     m_Data: {fileID: 1921386881, guid: 14a50e43a79615e4fa8500e659f9387b, type: 3}
-  - m_RefCount: 10
+  - m_RefCount: 9
     m_Data: {fileID: -2084888556, guid: 14a50e43a79615e4fa8500e659f9387b, type: 3}
-  - m_RefCount: 8
+  - m_RefCount: 7
     m_Data: {fileID: -1714528401, guid: 14a50e43a79615e4fa8500e659f9387b, type: 3}
   - m_RefCount: 32
     m_Data: {fileID: -1022694994, guid: 14a50e43a79615e4fa8500e659f9387b, type: 3}
@@ -4348,10 +4339,10 @@ Tilemap:
     m_Data: {fileID: -2069455165, guid: 14a50e43a79615e4fa8500e659f9387b, type: 3}
   - m_RefCount: 8
     m_Data: {fileID: 330566663, guid: 14a50e43a79615e4fa8500e659f9387b, type: 3}
-  - m_RefCount: 7
+  - m_RefCount: 8
     m_Data: {fileID: 1236758971, guid: 14a50e43a79615e4fa8500e659f9387b, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -1316149506, guid: 14a50e43a79615e4fa8500e659f9387b, type: 3}
   - m_RefCount: 11
     m_Data: {fileID: -227402950, guid: 14a50e43a79615e4fa8500e659f9387b, type: 3}
   - m_RefCount: 13
@@ -4365,7 +4356,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 1853718709, guid: 14a50e43a79615e4fa8500e659f9387b, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 166
+  - m_RefCount: 165
     m_Data:
       e00: 1
       e01: 0
@@ -4438,7 +4429,7 @@ Tilemap:
       e32: 4.5905e-41
       e33: 0
   m_TileColorArray:
-  - m_RefCount: 166
+  - m_RefCount: 165
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -4565,8 +4556,12 @@ CompositeCollider2D:
         Y: -100000000
     - - X: 230000000
         Y: -30000000
-      - X: 190000000
+      - X: 200000000
         Y: -30000000
+      - X: 200000000
+        Y: -40000000
+      - X: 190000000
+        Y: -40000000
       - X: 190000000
         Y: -60000000
       - X: 230000000
@@ -4612,7 +4607,9 @@ CompositeCollider2D:
       - {x: -19, y: -10}
       - {x: 0, y: -10}
     - - {x: 23, y: -3}
-      - {x: 19, y: -3}
+      - {x: 20, y: -3}
+      - {x: 20, y: -4}
+      - {x: 19, y: -4}
       - {x: 19, y: -6}
       - {x: 23, y: -6}
     - - {x: 18, y: -6}
