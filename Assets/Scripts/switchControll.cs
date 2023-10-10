@@ -10,6 +10,7 @@ public class switchControll : MonoBehaviour
     [SerializeField] private Animator animator_Exit;
     private BoxCollider2D box2D_Exit;
     [SerializeField] private GameObject isActive_Object;
+    private GameObject ob_Elevator;
     [Header("select_function \n" +
         "0 object FlyingBorad \n" +
         "1 object Bridge \n" +
@@ -23,7 +24,7 @@ public class switchControll : MonoBehaviour
         flat = 1;
         isElevator = true;
         transform.DOMoveY(transform.position.y + 0.3f, 0.5f).SetLoops(-1, LoopType.Yoyo);
-        transform.DORotate(new Vector3(0,180,0), 0.5f, RotateMode.FastBeyond360).SetLoops(-1, LoopType.Yoyo);
+        transform.DORotate(new Vector3(0,180,18), 0.5f, RotateMode.FastBeyond360).SetLoops(-1, LoopType.Yoyo);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -31,24 +32,28 @@ public class switchControll : MonoBehaviour
         {
             if (select_function == 0)
             {
-                isActive_Object.SetActive(true);
+                // Tạo một bản sao của prefab GameObject con
+                GameObject childObject = Instantiate(isActive_Object);
+                // Gán GameObject cha cho GameObject con
+                childObject.transform.parent = GameObject.Find("flyingBoard_layer2").transform;
+                // Đặt vị trí và góc quay của GameObject con tương đối với GameObject cha (nếu cần)
+                childObject.transform.localPosition = new Vector3(3f, -5f, 0f); // Vị trí tương đối
+                childObject.transform.localRotation = Quaternion.identity; // Góc quay tương đối
                 gameObject.SetActive(false);
                 musicControll.switchSound(true);
-               // musicControll.switchSound(false);
             }
             else if (select_function == 1)
             {
-                isActive_Object.SetActive(true);
+                Instantiate(isActive_Object,new Vector3(0,0,0),Quaternion.identity);
+
                 gameObject.SetActive(false);
                 musicControll.switchSound(true);
-                // musicControll.switchSound(false);
             }
             else if(select_function == 2)
             {
                 isActive_Object.SetActive(false);
                 gameObject.SetActive(false);
                 musicControll.switchSound(true);
-                // musicControll.switchSound(false);
             }
             else if(select_function == 3)
             {
@@ -58,15 +63,11 @@ public class switchControll : MonoBehaviour
                 Invoke(nameof(ExitClose), 5);              //  sau 5 giay se goi ham ExitClose
                                                            //  Debug.Log("Chức năng đang bảo trì");
                 musicControll.switchSound(true);
-                // musicControll.switchSound(false);
             }
             else if (select_function == 4)
             {
-                isActive_Object.transform.position = new Vector3(7, 1, 0);
-                isActive_Object.SetActive(true);
-                if (isElevator)
+                ob_Elevator = Instantiate(isActive_Object, new Vector3(7, 1, 0),Quaternion.identity);
                 InvokeRepeating(nameof(ActiveElevator), 0, 3);
-                isElevator = false;
                 gameObject.SetActive(false);
                 musicControll.switchSound(true);
             }
@@ -74,8 +75,15 @@ public class switchControll : MonoBehaviour
     }
     private void ActiveElevator()
     {
-        isActive_Object.transform.DOMoveY(isActive_Object.transform.position.y + (6*flat), 2).SetEase(Ease.Linear);
-        flat *= -1;
+        GameObject ob_Elevator = GameObject.Find("Elevator(Clone)");
+        if (!ob_Elevator) { CancelInvoke(nameof(ActiveElevator)); flat = 1; }
+        else
+        {
+            ob_Elevator.transform.DOMoveY(ob_Elevator.transform.position.y + (6 * flat), 2)
+    .SetEase(Ease.Linear);
+            flat *= -1;
+        }
+
     }
     private void ExitClose()
     {

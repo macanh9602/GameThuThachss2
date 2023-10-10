@@ -12,16 +12,14 @@ public class Victory : MonoBehaviour
         if(collision.tag == "Player")
         {
             Oj_animator.SetBool("isVictory", true);
-            Invoke(nameof(DesTroyPlayer),0);
+            GameManage.instance.end_game();
+            Oj_transform.DOScale(new Vector3(0.1f, 0.1f, 0.1f), 3f);
+            Invoke(nameof(GetPanelWin), 1f);
         }
     }
-    void DesTroyPlayer()
-    {
-        Oj_transform.DOScale(new Vector3(0.1f, 0.1f, 0.1f), 3f);
-        Invoke(nameof(GetPanelWin), 1f);
-    }
+   
     public void GetPanelWin()
     {
-        Oj_canvas.Panel_endGame("Chúc mừng bạn đã qua thử thách !"); 
+        Oj_canvas.Panel_endGame("Chúc mừng bạn đã qua thử thách !",true); 
     }
 }

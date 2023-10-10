@@ -4,26 +4,26 @@ using UnityEngine;
 
 public class musicControll : MonoBehaviour
 {
-    [SerializeField] private AudioSource[] audio;
+    [SerializeField] private AudioSource[] audios;
     public float delayBetweenLoops;
     // Start is called before the first frame update
     void Start()
     {
-        audio = GetComponents<AudioSource>();
+        audios = GetComponents<AudioSource>();
        // audio[0].Play();
     }
     public void runningSound(bool isPlay)
     {
         if (isPlay==true )
         {
-            if (audio[1].isPlaying == false)
+            if (audios[1].isPlaying == false)
             {
-                audio[1].Play();
+                audios[1].Play();
             }
         }
         else
         {
-            audio[1].Stop();
+            audios[1].Stop();
         }
 
     }
@@ -31,14 +31,14 @@ public class musicControll : MonoBehaviour
     {
         if (isPlay == true)
         {
-            if (audio[2].isPlaying == false)
+            if (audios[2].isPlaying == false)
             {
-                audio[2].Play();
+                audios[2].Play();
             }
         }
         else
         {
-            audio[2].Stop();
+            audios[2].Stop();
         }
 
     }

@@ -7,7 +7,7 @@ using DG.Tweening;
 public class Exctensions : MonoBehaviour
 {
     public TMP_Text text;
-    bool IncomingText = false;
+   // bool IncomingText = false;
     // Start is called before the first frame update
     void Start()
     {

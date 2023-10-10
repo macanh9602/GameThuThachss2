@@ -15,6 +15,7 @@ public class playerControll : MonoBehaviour
      private CapsuleCollider2D thisCollision;
     private BoxCollider2D footCollision;
     [SerializeField] private SpriteRenderer sprite;
+    private bool isGround, isWalk;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,13 +26,40 @@ public class playerControll : MonoBehaviour
         footCollision = GetComponent<BoxCollider2D>();
         rb.velocity = Vector3.zero;
     }
-
+    public void checkAnimation()
+    {
+        if (footCollision.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        {
+            isGround= true;
+        }
+        else
+        {
+            isGround= false;
+        }
+        animator.SetBool("isWalk", checkMove());
+        animator.SetBool("isGround",isGround);
+    }
+    public bool checkMove()
+    {
+        if (rb.velocity.x != 0)
+        {
+             isWalk = true;
+            musicControll.runningSound(true);
+        }
+        else
+        {
+            isWalk = false;
+            musicControll.runningSound(false);
+        }
+        return isWalk;
+    }
     // Update is called once per frame
     void Update()
     {
         if (GameManage.instance.isPlay)
         {
             float xInput = UnityEngine.Input.GetAxisRaw("Horizontal"); // 
+            checkAnimation();
             Move(xInput);
             animator.SetFloat("yVelocity", rb.velocity.y); // hoat canh nhay len xuong theo van toc vua y
             Jump();
@@ -49,23 +77,12 @@ public class playerControll : MonoBehaviour
     }
     void Move(float _xInput)
     {
-        if ( footCollision.IsTouchingLayers(LayerMask.GetMask("Ground")) ||  // khi Player dung tren mat dat
+        if ( isGround ||  // khi Player dung tren mat dat
             !thisCollision.IsTouchingLayers(LayerMask.GetMask("Ground")) && // khi Player da lo lung trong khong gian
             !footCollision.IsTouchingLayers(LayerMask.GetMask("Ground"))
             )
         {        
                 rb.velocity = new Vector2(_xInput * speed, rb.velocity.y);
-                bool IsMove = Mathf.Abs(rb.velocity.x) > 0;
-                animator.SetBool("isWalk", IsMove);
-            if (_xInput != 0)
-            {
-                musicControll.runningSound(true);
-            }
-            else
-            {
-                musicControll.runningSound(false);
-
-            }
             FlipFace();     
         }
 
@@ -84,15 +101,10 @@ public class playerControll : MonoBehaviour
         if (UnityEngine.Input.GetKeyDown(KeyCode.Space) && footCollision.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed); //  play nhay len cao
-            animator.SetBool("isJump", true);
         }
         if (rb.velocity.y < 0)   // luc huong xuong dat
         {
             rb.velocity -= newtonPower * vecGravity * Time.deltaTime;
-        }
-        if (rb.velocity.y <= 0 && thisCollision.IsTouchingLayers(LayerMask.GetMask("Ground")))
-        {
-            animator.SetBool("isJump", false);
         }
     }
     public void isDie()

@@ -12,6 +12,7 @@ public class CanVas : MonoBehaviour
     [SerializeField] private GameObject panel_end,panel_start,panel_pause ;
     [SerializeField] ScoreControll Score;
     [SerializeField] private TMP_InputField textPlayer;
+    string t_Player, t_TopPlayer;
     public void btn_play()
     {
         panel_start.SetActive(false);
@@ -32,16 +33,22 @@ public class CanVas : MonoBehaviour
         Time.timeScale = 1f;
         panel_pause.SetActive(false);
     }
-    public void Panel_endGame(string text)
+    public void Panel_endGame(string text,bool winOrLoss)
     {
-        GameManage.instance.end_game();
-        if (Score.score2 > PlayerPrefs.GetInt("topscore"))
+        if (Score.score2 > PlayerPrefs.GetInt("topscore")&& winOrLoss==true)
         {
             PlayerPrefs.SetInt("topscore", Score.score2);
             PlayerPrefs.SetString("topname", textPlayer.text);
         }
-        string t_TopPlayer = "Top Player: " + PlayerPrefs.GetString("topname")+"  " + PlayerPrefs.GetInt("topscore");
-        string t_Player = "Player: "+textPlayer.text+" "+Score.score2;
+         if (winOrLoss == false)
+        {
+            t_Player = "Player: " + textPlayer.text + " " + 0;
+        }
+        else
+        {
+            t_Player = "Player: " + textPlayer.text + " " + Score.score2;
+        }
+        t_TopPlayer = "Top Player: " + PlayerPrefs.GetString("topname")+"  " + PlayerPrefs.GetInt("topscore");
         panel_end.SetActive(true);
         txtHeader.DOText(text, 2f, true) // Văn bản ban đầu và thời gian hoàn thành tween.
           .SetDelay(1f);
