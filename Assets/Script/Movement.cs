@@ -16,14 +16,17 @@ public class Movement : MonoBehaviour
     private BoxCollider2D footCollision;
 
     public bool onState = false;
-    public DOPathController dongdoc;
+    public HookController dongdoc;
 
 
     [SerializeField] private SpriteRenderer sprite;
 
+    public Vector3 currentPos;
+
     // Start is called before the first frame update
     void Start()
     {
+        currentPos = transform.position;
         vecGravity = new Vector2(0f, -Physics2D.gravity.y);
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -127,7 +130,7 @@ public class Movement : MonoBehaviour
     ///abc adajfbn
     private void DongDoc()
     {
-        Debug.Log(dongdoc is not null);
+        //Debug.Log(dongdoc is not null);
         if (UnityEngine.Input.GetKeyDown(KeyCode.X))
         {
             if (!onState && dongdoc is not null)

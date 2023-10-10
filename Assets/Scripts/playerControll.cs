@@ -16,7 +16,7 @@ public class playerControll : MonoBehaviour
     private BoxCollider2D footCollision;
 
     public bool onState = false;
-    public DOPathController dongdoc;
+    public HookController dongdoc;
 
 
     [SerializeField] private SpriteRenderer sprite;
