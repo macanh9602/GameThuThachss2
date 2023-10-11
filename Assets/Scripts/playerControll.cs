@@ -14,8 +14,15 @@ public class playerControll : MonoBehaviour
     [SerializeField] float newtonPower = 0f;
      private CapsuleCollider2D thisCollision;
     private BoxCollider2D footCollision;
+
+    public bool onState = false;
+    public HookController dongdoc;
+
+
     [SerializeField] private SpriteRenderer sprite;
+
     private bool isGround, isWalk;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +32,7 @@ public class playerControll : MonoBehaviour
         thisCollision = GetComponent<CapsuleCollider2D>();
         footCollision = GetComponent<BoxCollider2D>();
         rb.velocity = Vector3.zero;
+        
     }
     public void checkAnimation()
     {
@@ -56,6 +64,13 @@ public class playerControll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        //float xInput = UnityEngine.Input.GetAxisRaw("Horizontal"); // 
+        //Move(xInput);
+        //animator.SetFloat("yVelocity", rb.velocity.y); // hoat canh nhay len xuong theo van toc vua y
+        //Jump();
+        //DongDoc();
+
         if (GameManage.instance.isPlay)
         {
             float xInput = UnityEngine.Input.GetAxisRaw("Horizontal"); // 
@@ -74,6 +89,7 @@ public class playerControll : MonoBehaviour
         transform.position = new Vector2(16, 1);
         animator.SetBool("isDie", false);
        transform.DOScale(new Vector3(1f, 1f, 1f), 1f);
+
     }
     void Move(float _xInput)
     {
@@ -121,5 +137,29 @@ public class playerControll : MonoBehaviour
 
         }
     }
+    ///abc adajfbn
+    private void DongDoc()
+    {
+        Debug.Log(dongdoc is not null);
+        if (UnityEngine.Input.GetKeyDown(KeyCode.X))
+        {
+            if (!onState && dongdoc is not null)
+            {
+                gameObject.transform.parent = dongdoc.transform;
+                
+                //transform.DOMove(target.transform.position, time).SetEase(ease);
+                dongdoc.action(gameObject);
 
+            }
+            else
+            {
+                gameObject.transform.parent = null;
+                gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+                gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+
+
+            }
+            onState = !onState;
+        }
+    }
 }

@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Sceness/Menu.unity
+    guid: 7091c1228238c624e981a34001e4a74e
+  - enabled: 1
+    path: Assets/Sceness/SceneOption.unity
+    guid: 07bc7df4de5815d479b65aef0c43412a
+  - enabled: 1
     path: Assets/Sceness/dai.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -14,4 +20,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Sceness/GamePlay.unity
     guid: 4ad343530e5bb4d4b94705b3c777f79e
+
   m_configObjects: {}

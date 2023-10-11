@@ -11,6 +11,7 @@ public class GameManage : MonoBehaviour
     public GameObject[] gameObjectAppear;
     public ScoreControll scoreControll;
     public playerControll player;
+    public bridgeControll bridgeControl;
     private void Awake()
     {   if(instance==null)
         {
