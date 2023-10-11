@@ -446,7 +446,7 @@ Transform:
   m_GameObject: {fileID: 169016528}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 35.11, y: 7.24, z: -10.61}
+  m_LocalPosition: {x: 35.11, y: 6.83, z: -10.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -542,7 +542,7 @@ Transform:
   m_GameObject: {fileID: 199769623}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 35.11, y: 7.24, z: -10.61}
+  m_LocalPosition: {x: 35.11, y: 6.83, z: -10.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -690,10 +690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ed1c81cdb68dc741b111cd01811391f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio:
-  - {fileID: 199769629}
-  - {fileID: 199769629}
-  - {fileID: 199769629}
+  audios: []
   delayBetweenLoops: 0.2
 --- !u!1 &250879225
 GameObject:
@@ -2005,7 +2002,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1142059960}
-  - component: {fileID: 1142059959}
   - component: {fileID: 1142059957}
   - component: {fileID: 1142059956}
   - component: {fileID: 1142059955}
@@ -2199,19 +2195,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1142059959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1142059952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b474c6f841eea4ca4f19e13e35bd73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Oj_canvas: {fileID: 0}
 --- !u!4 &1142059960
 Transform:
   m_ObjectHideFlags: 0
@@ -2221,7 +2204,7 @@ Transform:
   m_GameObject: {fileID: 1142059952}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.08715578, z: -0, w: 0.9961947}
-  m_LocalPosition: {x: 35.11, y: 7.24, z: -0.61}
+  m_LocalPosition: {x: 35.11, y: 6.83, z: -0.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15644,6 +15627,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3240623222689402687, guid: 3cd1d63c15ff6a44c907fcb75e803c82, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3752774446697566270, guid: 3cd1d63c15ff6a44c907fcb75e803c82, type: 3}
       propertyPath: m_Name
       value: RotateObj(LoopRotate)
@@ -15729,6 +15716,10 @@ PrefabInstance:
     - target: {fileID: 1361829593458685812, guid: 255a2efef6ff3164787c27374c3614ce, type: 3}
       propertyPath: m_Name
       value: gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 1361829593458685812, guid: 255a2efef6ff3164787c27374c3614ce, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2347141023886108566, guid: 255a2efef6ff3164787c27374c3614ce, type: 3}
       propertyPath: target
