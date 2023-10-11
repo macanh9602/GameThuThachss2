@@ -9,13 +9,14 @@ public class flyingBoard : MonoBehaviour
     public bool isMove;
     [SerializeField] private GameObject[] waypoint;
     [SerializeField] private float maxSpeed;
-    [SerializeField] private SpriteRenderer sprite;
     private int currentWaypointIndex = 0;
     
     // Start is called before the first frame update
     void Start()
     {
-        sprite.DOFade(1,2);
+        waypoint = new GameObject[2];
+        waypoint[0] = GameObject.Find("pointstart");
+        waypoint[1] = GameObject.Find("pointend");
         isMove = false;
     }
     void FixedUpdate()

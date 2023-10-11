@@ -148,6 +148,7 @@ public class Movement : MonoBehaviour
                 gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
 
 
+
             }
             onState = !onState;
         }
@@ -162,6 +163,10 @@ public class Movement : MonoBehaviour
 
         }
     }
+
+      }*/
+    //
+
 }
 
 
