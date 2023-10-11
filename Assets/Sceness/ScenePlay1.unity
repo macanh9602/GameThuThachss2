@@ -15627,6 +15627,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3240623222689402687, guid: 3cd1d63c15ff6a44c907fcb75e803c82, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3752774446697566270, guid: 3cd1d63c15ff6a44c907fcb75e803c82, type: 3}
       propertyPath: m_Name
       value: RotateObj(LoopRotate)
@@ -15715,7 +15719,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1361829593458685812, guid: 255a2efef6ff3164787c27374c3614ce, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2347141023886108566, guid: 255a2efef6ff3164787c27374c3614ce, type: 3}
       propertyPath: target
