@@ -11,7 +11,7 @@ public class HookController : MonoBehaviour
     [SerializeField] float time;
     [SerializeField] Ease ease;
     [SerializeField] GameObject playerTransform;
-    float count = 0;
+    //float count = 0;
     public GameObject posPlayer;
     //bool onState = false;
     public bool IsMoveLeft = true;

@@ -9,14 +9,14 @@ public class textHD : MonoBehaviour
 {
     [SerializeField] TMP_Text text;
     [SerializeField] TMP_Text textInput;
-    [SerializeField] GameObject BGtalk;
+    [SerializeField] Transform BGtalk;
     // Start is called before the first frame update
     float n = 0;
     void Start()
     {
-        BGtalk.gameObject.SetActive(true);
-        text.text = "Halo people ! Welcomeback !";
-        textInput.text = "--> Click Enter to countinue";
+        //BGtalk.gameObject.SetActive(true);
+        //text.text = "Halo people ! Welcomeback !";
+        //textInput.text = "--> Click Enter to countinue";
     }
 
     // Update is called once per frame
@@ -36,11 +36,13 @@ public class textHD : MonoBehaviour
         if (n == 2 && (Input.GetKeyDown(KeyCode.Space)))
         {
             text.TextAnimationKillByMDA("Goodjob ! Let's play !");
+
             n = 3;
         }
         if(n != 0)
         {
             textInput.text = "";
+            
         }
     }
 }
