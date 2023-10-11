@@ -5,6 +5,7 @@ using DG.Tweening;
 
 using TMPro;
 using JetBrains.Annotations;
+using UnityEngine.SceneManagement;
 
 public class CanVas : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class CanVas : MonoBehaviour
     {
         panel_start.SetActive(false);
         GameManage.instance.play_game();
+    }
+    public void btn_menu()
+    {
+        SceneManager.LoadScene(2);
     }
     public void btn_newGame()
     {
