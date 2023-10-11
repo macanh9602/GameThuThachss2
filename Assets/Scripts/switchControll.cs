@@ -6,7 +6,6 @@ public class switchControll : MonoBehaviour
 {
     public musicControll musicControll;
     private int flat = 1;
-    private bool isElevator;
     [SerializeField] private Animator animator_Exit;
     private BoxCollider2D box2D_Exit;
     [SerializeField] private GameObject isActive_Object;
@@ -22,7 +21,6 @@ public class switchControll : MonoBehaviour
     private void Start()
     {
         flat = 1;
-        isElevator = true;
         transform.DOMoveY(transform.position.y + 0.3f, 0.5f).SetLoops(-1, LoopType.Yoyo);
         transform.DORotate(new Vector3(0,180,18), 0.5f, RotateMode.FastBeyond360).SetLoops(-1, LoopType.Yoyo);
     }
