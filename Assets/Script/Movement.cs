@@ -21,6 +21,7 @@ public class Movement : MonoBehaviour
 
     [SerializeField] private SpriteRenderer sprite;
 
+    private bool isGround, isWalk;
     public Vector3 currentPos;
 
     // Start is called before the first frame update
@@ -41,6 +42,7 @@ public class Movement : MonoBehaviour
     {
 
         float xInput = UnityEngine.Input.GetAxisRaw("Horizontal"); // 
+        checkAnimation();
         Move(xInput);
         animator.SetFloat("yVelocity", rb.velocity.y); // hoat canh nhay len xuong theo van toc vua y
         Jump();
@@ -57,6 +59,33 @@ public class Movement : MonoBehaviour
         //{
         //    musicControll.runningSound(false);
         //}
+    }
+    public void checkAnimation()
+    {
+        if (footCollision.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        {
+            isGround = true;
+        }
+        else
+        {
+            isGround = false;
+        }
+        animator.SetBool("isWalk", checkMove());
+        animator.SetBool("isGround", isGround);
+    }
+    public bool checkMove()
+    {
+        if (rb.velocity.x != 0)
+        {
+            isWalk = true;
+            //musicControll.runningSound(true);
+        }
+        else
+        {
+            isWalk = false;
+            //musicControll.runningSound(false);
+        }
+        return isWalk;
     }
     public void ResetPlayer()
     {
