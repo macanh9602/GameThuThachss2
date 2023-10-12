@@ -64,5 +64,6 @@ public class CanVas : MonoBehaviour
     public void btn_newGameScene2()
     {
         SceneManager.LoadScene(2);
+        Time.timeScale = 0f;
     }
 }
