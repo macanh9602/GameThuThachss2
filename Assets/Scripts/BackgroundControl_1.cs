@@ -20,8 +20,8 @@ public class BackgroundControl_1 : MonoBehaviour
 
     void Update() {
         //for presentation without UIs
-        if (Input.GetKeyDown(KeyCode.RightArrow)) NextBG();
-        if (Input.GetKeyDown(KeyCode.LeftArrow)) BackBG();
+        //if (Input.GetKeyDown(KeyCode.RightArrow)) NextBG();
+        //if (Input.GetKeyDown(KeyCode.LeftArrow)) BackBG();
     }
 
     void ChangeSprite(){
