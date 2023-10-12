@@ -17,4 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Sceness/ScenePlay1.unity
     guid: 1443185b7e566f748a7a077c7520431d
+  - enabled: 1
+    path: Assets/Sceness/GamePlay.unity
+    guid: 4ad343530e5bb4d4b94705b3c777f79e
+
   m_configObjects: {}

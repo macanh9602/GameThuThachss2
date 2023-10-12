@@ -19,12 +19,13 @@ public class defeat : MonoBehaviour
             )
         {
             p.isDie();
+            GameManage.instance.end_game();
             Invoke(nameof(GetPanelLoss), 1f);
             //  Destroy(gameObject, 2);
         }
     }
     public void GetPanelLoss()
     {
-        Oj_canvas.Panel_endGame("Thử thách thất bại !");
+        Oj_canvas.Panel_endGame("Thử thách thất bại !",false);
     }
 }
