@@ -211,8 +211,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5638961442175184562}
   - component: {fileID: 4422171785395416289}
-  - component: {fileID: 4865748721347657748}
   - component: {fileID: 8111739119344799305}
+  - component: {fileID: 1177548407362062583}
   m_Layer: 6
   m_Name: Circle
   m_TagString: Untagged
@@ -287,21 +287,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4865748721347657748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4495627063231475315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68aadbad7bad8e648be8b9df5370b370, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _target:
-  - {fileID: 0}
-  ease: 0
 --- !u!58 &8111739119344799305
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -337,6 +322,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.00000023841858}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &1177548407362062583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4495627063231475315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5373d35bb11604aa89c9e0675505cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ease: 0
+  door: {fileID: 0}
 --- !u!1001 &2271211507340934240
 PrefabInstance:
   m_ObjectHideFlags: 0

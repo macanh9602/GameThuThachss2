@@ -7,6 +7,7 @@ public class OpenDoor : MonoBehaviour
 {
     [SerializeField] Ease ease;
     [SerializeField] Transform door;
+    [SerializeField] Transform target;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player" )
@@ -14,6 +15,7 @@ public class OpenDoor : MonoBehaviour
             transform.GetComponent<SpriteRenderer>().DOColor(Color.green, 2f).SetEase(ease).OnComplete(() => { 
                 door.GetComponent<SpriteRenderer>().DOFade(0, 3f);
                 door.gameObject.SetActive(false);
+                target.transform.gameObject.SetActive(true);
             }) ;
         }
     }
