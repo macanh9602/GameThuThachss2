@@ -8972,7 +8972,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1261322935}
         m_TargetAssemblyTypeName: CanVas, Assembly-CSharp
-        m_MethodName: btn_newGame
+        m_MethodName: btn_menu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
