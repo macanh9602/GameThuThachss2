@@ -23,7 +23,7 @@ public class CanVas : MonoBehaviour
     {  
         panel_start.SetActive(true);
         panel_end.SetActive(false);
-        Time.timeScale = 0f;
+        Time.timeScale = 1f;
     }
     public void btn_pause()
     {
@@ -64,6 +64,6 @@ public class CanVas : MonoBehaviour
     public void btn_newGameScene2()
     {
         SceneManager.LoadScene(2);
-        Time.timeScale = 0f;
+        Time.timeScale = 1f;
     }
 }
