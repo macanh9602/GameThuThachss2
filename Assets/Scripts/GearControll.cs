@@ -16,6 +16,7 @@ public class GearControll : MonoBehaviour
            flat = -1;
         }
         InvokeRepeating(nameof(gearActive),0f, time+1);
+        transform.DORotate(new Vector3(0, 0, 360), 1, RotateMode.FastBeyond360).SetLoops(-1).SetEase(Ease.Linear);
     }
     void gearActive()
     {
