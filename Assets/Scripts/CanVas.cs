@@ -23,6 +23,7 @@ public class CanVas : MonoBehaviour
     {  
         panel_start.SetActive(true);
         panel_end.SetActive(false);
+        Time.timeScale = 0f;
     }
     public void btn_pause()
     {
