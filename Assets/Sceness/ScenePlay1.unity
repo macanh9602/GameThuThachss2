@@ -630,7 +630,7 @@ Transform:
   m_GameObject: {fileID: 169016528}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 35.98, y: 7.28, z: -10.71}
+  m_LocalPosition: {x: 33.55, y: 7.47, z: -10.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -664,7 +664,7 @@ RectTransform:
   m_GameObject: {fileID: 173849137}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.01296, y: 0.01296, z: 0.01296}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 293347993}
@@ -675,7 +675,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -960, y: -539}
+  m_AnchoredPosition: {x: 88, y: -27}
   m_SizeDelta: {x: 1500, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &173849139
@@ -891,7 +891,7 @@ Transform:
   m_GameObject: {fileID: 199769623}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 35.98, y: 7.28, z: -10.71}
+  m_LocalPosition: {x: 33.55, y: 7.47, z: -10.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2664,7 +2664,7 @@ RectTransform:
   m_GameObject: {fileID: 683795352}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90}
-  m_LocalScale: {x: 0.01296, y: 0.01296, z: 0.01296}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1692757341}
@@ -2673,7 +2673,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -960, y: -539}
+  m_AnchoredPosition: {x: 64, y: -54}
   m_SizeDelta: {x: 1500, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &683795354
@@ -3098,9 +3098,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1750864767}
         m_TargetAssemblyTypeName: CanVas, Assembly-CSharp
-        m_MethodName: btn_newGame
+        m_MethodName: btn_newGameScene2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4313,6 +4313,7 @@ GameObject:
   - component: {fileID: 1142059954}
   - component: {fileID: 1142059953}
   - component: {fileID: 1142059962}
+  - component: {fileID: 1142059963}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -4509,7 +4510,7 @@ Transform:
   m_GameObject: {fileID: 1142059952}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.08715578, z: -0, w: 0.9961947}
-  m_LocalPosition: {x: 35.98, y: 7.28, z: -0.71}
+  m_LocalPosition: {x: 33.55, y: 7.47, z: -0.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4534,6 +4535,19 @@ MonoBehaviour:
   onState: 0
   dongdoc: {fileID: 0}
   sprite: {fileID: 0}
+--- !u!114 &1142059963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142059952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b474c6f841eea4ca4f19e13e35bd73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Oj_canvas: {fileID: 1750864767}
 --- !u!1001 &1161421645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17510,7 +17524,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1750864767}
         m_TargetAssemblyTypeName: CanVas, Assembly-CSharp
         m_MethodName: btn_continue
         m_Mode: 1
@@ -18235,7 +18249,7 @@ GameObject:
   - component: {fileID: 1750864763}
   - component: {fileID: 1750864767}
   m_Layer: 5
-  m_Name: playerControll
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18340,14 +18354,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5925cd0fba3e98343bc8a26eddaba5ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  txtHeader: {fileID: 0}
-  txtTopPlayer: {fileID: 0}
-  txtPlayer: {fileID: 0}
-  panel_end: {fileID: 0}
+  txtHeader: {fileID: 293347994}
+  txtTopPlayer: {fileID: 1204579383}
+  txtPlayer: {fileID: 1622576794}
+  panel_end: {fileID: 173849137}
   panel_start: {fileID: 656791538}
-  panel_pause: {fileID: 0}
-  Score: {fileID: 0}
-  textPlayer: {fileID: 0}
+  panel_pause: {fileID: 683795352}
+  Score: {fileID: 552117733}
+  textPlayer: {fileID: 1108856263}
 --- !u!1 &1752856797
 GameObject:
   m_ObjectHideFlags: 0
@@ -19314,7 +19328,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1750864767}
         m_TargetAssemblyTypeName: CanVas, Assembly-CSharp
         m_MethodName: btn_pause
         m_Mode: 1
@@ -19372,6 +19386,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 250879226}
     m_Modifications:
+    - target: {fileID: 3237463149452764800, guid: e9fb6bdcf3f131e4bba4d7ea3608ae70, type: 3}
+      propertyPath: Oj_canvas
+      value: 
+      objectReference: {fileID: 1750864767}
+    - target: {fileID: 3237463149452764800, guid: e9fb6bdcf3f131e4bba4d7ea3608ae70, type: 3}
+      propertyPath: Oj_sprite
+      value: 
+      objectReference: {fileID: 1142059957}
+    - target: {fileID: 3237463149452764800, guid: e9fb6bdcf3f131e4bba4d7ea3608ae70, type: 3}
+      propertyPath: Oj_animator
+      value: 
+      objectReference: {fileID: 1142059955}
+    - target: {fileID: 3237463149452764800, guid: e9fb6bdcf3f131e4bba4d7ea3608ae70, type: 3}
+      propertyPath: Oj_transform
+      value: 
+      objectReference: {fileID: 1142059960}
     - target: {fileID: 5966554669665184469, guid: e9fb6bdcf3f131e4bba4d7ea3608ae70, type: 3}
       propertyPath: m_Name
       value: GateGoHome

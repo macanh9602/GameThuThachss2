@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7761481934564203691}
   - component: {fileID: 3572898131455360718}
-  - component: {fileID: 7444166623353096077}
   - component: {fileID: 1770840845817977583}
+  - component: {fileID: 3237463149452764800}
   m_Layer: 0
   m_Name: GateGoHome
   m_TagString: Untagged
@@ -86,19 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7444166623353096077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5966554669665184469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0e7a949d0f08e84a9d20a8fa564523a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  index: 0
 --- !u!61 &1770840845817977583
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -144,3 +131,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3237463149452764800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5966554669665184469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ca705ca1b4203543b2fb35b940a2cd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Oj_animator: {fileID: 0}
+  Oj_transform: {fileID: 0}
+  Oj_sprite: {fileID: 0}
+  Oj_canvas: {fileID: 0}

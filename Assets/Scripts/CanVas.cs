@@ -5,6 +5,7 @@ using DG.Tweening;
 
 using TMPro;
 using JetBrains.Annotations;
+using UnityEngine.SceneManagement;
 
 public class CanVas : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class CanVas : MonoBehaviour
         GameManage.instance.play_game();
     }
     public void btn_newGame()
-    {
+    {  
         panel_start.SetActive(true);
         panel_end.SetActive(false);
     }
@@ -58,5 +59,9 @@ public class CanVas : MonoBehaviour
         panel_end.SetActive(true);
         txtPlayer.DOText(t_Player, 2f, true) // Văn bản ban đầu và thời gian hoàn thành tween.
           .SetDelay(0.1f);
+    }
+    public void btn_newGameScene2()
+    {
+        SceneManager.LoadScene(2);
     }
 }

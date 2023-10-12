@@ -164,13 +164,5 @@ public class playerControll : MonoBehaviour
             onState = !onState;
         }
     }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.tag == "bullet")
-        {
-            this.isDie();
-            this.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
-
-        }
-    }
+    
 }
