@@ -17,6 +17,7 @@ public class playerControll : MonoBehaviour
 
     public bool onState = false;
     public HookController dongdoc;
+    Vector3 currentPos;
 
 
     [SerializeField] private SpriteRenderer sprite;
@@ -32,7 +33,7 @@ public class playerControll : MonoBehaviour
         thisCollision = GetComponent<CapsuleCollider2D>();
         footCollision = GetComponent<BoxCollider2D>();
         rb.velocity = Vector3.zero;
-        
+        currentPos = transform.position;
     }
     public void checkAnimation()
     {
@@ -78,6 +79,7 @@ public class playerControll : MonoBehaviour
             Move(xInput);
             animator.SetFloat("yVelocity", rb.velocity.y); // hoat canh nhay len xuong theo van toc vua y
             Jump();
+            DongDoc();
         }
         else
         {
@@ -86,7 +88,7 @@ public class playerControll : MonoBehaviour
     }
     public void ResetPlayer()
     {
-        transform.position = new Vector2(16, 1);
+        transform.position = currentPos;
         animator.SetBool("isDie", false);
        transform.DOScale(new Vector3(1f, 1f, 1f), 1f);
 
@@ -140,7 +142,7 @@ public class playerControll : MonoBehaviour
     ///abc adajfbn
     private void DongDoc()
     {
-        Debug.Log(dongdoc is not null);
+        //Debug.Log(dongdoc is not null);
         if (UnityEngine.Input.GetKeyDown(KeyCode.X))
         {
             if (!onState && dongdoc is not null)
@@ -162,4 +164,5 @@ public class playerControll : MonoBehaviour
             onState = !onState;
         }
     }
+    
 }

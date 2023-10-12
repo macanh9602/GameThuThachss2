@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -7,10 +8,12 @@ using UnityEngine.SceneManagement;
 public class CanvasGamePlay : MonoBehaviour
 {
     [SerializeField] private GameObject panel_gameMode;
+    [SerializeField] private GameObject gameName;
     private int index_Scene = -1;
     public void playNow()
     {
         panel_gameMode.SetActive(true);
+        gameName.SetActive(false);
     }
     public void setSelectGame(int index)
     {
@@ -21,6 +24,7 @@ public class CanvasGamePlay : MonoBehaviour
     public void Exit()
     {
         panel_gameMode.SetActive(false);
+        gameName.SetActive(true);
     }
 
     // Coroutine để chuyển scene sau một khoảng thời gian đợi.

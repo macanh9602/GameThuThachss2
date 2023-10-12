@@ -5,7 +5,6 @@ using UnityEngine;
 public class musicControll : MonoBehaviour
 {
     [SerializeField] private AudioSource[] audios;
-    public float delayBetweenLoops;
     // Start is called before the first frame update
     void Start()
     {

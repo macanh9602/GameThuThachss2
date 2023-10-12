@@ -8,7 +8,7 @@ public class Teleport : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            collision.gameObject.transform.position = collision.gameObject.GetComponent<Movement>().currentPos;
+            collision.gameObject.transform.position = transform.Find("PosNew").GetComponent<Transform>().position;   
             
         }
     }
