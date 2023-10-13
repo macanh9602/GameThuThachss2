@@ -2764,7 +2764,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-
 --- !u!1 &1283330279
 GameObject:
   m_ObjectHideFlags: 0
@@ -2950,7 +2949,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1341833764
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3295,18 +3294,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a576fff17c7c984093bd1b7dc5e7e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameName: {fileID: 277875912}
   ob_layer:
   - {fileID: 21300000, guid: 9c92071cabd29ee45a7cef233dff0bb1, type: 3}
   - {fileID: 21300000, guid: a7fcfad79a1823b48816db44c1c15419, type: 3}
   - {fileID: 21300000, guid: 8e702e28d9c86da4ea705812285ea412, type: 3}
   - {fileID: 21300000, guid: 59615e5fbdc7c544da105486205c4c8d, type: 3}
   panel_gameMode: {fileID: 1341833763}
-
-  gameName: {fileID: 277875912}
-
   loadTime: {fileID: 2053053200}
   panel_maintenance: {fileID: 946879365}
-
 --- !u!1 &1563751588
 GameObject:
   m_ObjectHideFlags: 0

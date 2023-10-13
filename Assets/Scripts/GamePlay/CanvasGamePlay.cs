@@ -9,10 +9,8 @@ using UnityEngine.UI;
 public class CanvasGamePlay : MonoBehaviour
 {
 
-    [SerializeField] private GameObject panel_gameMode;
-    [SerializeField] private GameObject gameName;
-    private int index_Scene = -1;
 
+    [SerializeField] private GameObject gameName;
     [SerializeField] private Sprite[] ob_layer;
     [SerializeField] private GameObject panel_gameMode,loadTime, panel_maintenance;
     private int index_Scene = -1,time=3;
