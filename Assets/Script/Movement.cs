@@ -40,13 +40,16 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        float xInput = UnityEngine.Input.GetAxisRaw("Horizontal"); // 
-        checkAnimation();
-        Move(xInput);
-        animator.SetFloat("yVelocity", rb.velocity.y); // hoat canh nhay len xuong theo van toc vua y
-        Jump();
-        DongDoc();
+        if (GameManage.instance.isPlay)
+        {
+            float xInput = UnityEngine.Input.GetAxisRaw("Horizontal"); // 
+            checkAnimation();
+            Move(xInput);
+            animator.SetFloat("yVelocity", rb.velocity.y); // hoat canh nhay len xuong theo van toc vua y
+            Jump();
+            DongDoc();
+        }
+            
 
         //if (GameManage.instance.isPlay)
         //{

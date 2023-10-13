@@ -25,7 +25,7 @@ public class CanVas : MonoBehaviour
         SceneManager.LoadScene(2);
     }
     public void btn_newGame()
-    {
+    {  
         panel_start.SetActive(true);
         panel_end.SetActive(false);
         Time.timeScale = 1f;
@@ -65,5 +65,10 @@ public class CanVas : MonoBehaviour
         panel_end.SetActive(true);
         txtPlayer.DOText(t_Player, 1f, true) // Văn bản ban đầu và thời gian hoàn thành tween.
           .SetDelay(0.1f);
+    }
+    public void btn_newGameScene2()
+    {
+        SceneManager.LoadScene(2);
+        Time.timeScale = 1f;
     }
 }

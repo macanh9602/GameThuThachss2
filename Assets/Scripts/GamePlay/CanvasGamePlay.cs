@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -7,12 +8,19 @@ using UnityEngine.UI;
 
 public class CanvasGamePlay : MonoBehaviour
 {
+
+    [SerializeField] private GameObject panel_gameMode;
+    [SerializeField] private GameObject gameName;
+    private int index_Scene = -1;
+
     [SerializeField] private Sprite[] ob_layer;
     [SerializeField] private GameObject panel_gameMode,loadTime, panel_maintenance;
     private int index_Scene = -1,time=3;
+
     public void playNow()
     {
         panel_gameMode.SetActive(true);
+        gameName.SetActive(false);
     }
    IEnumerator maintenance()
     {
@@ -51,6 +59,7 @@ public class CanvasGamePlay : MonoBehaviour
     public void Exit()
     {
         panel_gameMode.SetActive(false);
+        gameName.SetActive(true);
     }
 
     // Coroutine để chuyển scene sau một khoảng thời gian đợi.

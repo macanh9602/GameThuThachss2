@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class defeat : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class defeat : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("bottom") ||
             collision.gameObject.CompareTag("stamping")||
-             collision.gameObject.CompareTag("gear")
+             collision.gameObject.CompareTag("gear") 
             )
         {
             p.isDie();
@@ -26,6 +27,21 @@ public class defeat : MonoBehaviour
     }
     public void GetPanelLoss()
     {
+
+        Oj_canvas.Panel_endGame("Thử thách thất bại !",false);
+        Time.timeScale = 0f;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("bullet"))
+        {
+            p.isDie();
+            GameManage.instance.end_game();
+            Invoke(nameof(GetPanelLoss), 1f);
+            
+            //collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
+        }
+
         Oj_canvas.Panel_endGame("Thu thach that bai !",false);
     }
 }
