@@ -29,3 +29,4 @@ public class defeat : MonoBehaviour
         Oj_canvas.Panel_endGame("Thu thach that bai !",false);
     }
 }
+//
