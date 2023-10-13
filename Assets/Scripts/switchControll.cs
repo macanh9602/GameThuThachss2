@@ -22,7 +22,8 @@ public class switchControll : MonoBehaviour
     {
         flat = 1;
         transform.DOMoveY(transform.position.y + 0.3f, 0.5f).SetLoops(-1, LoopType.Yoyo);
-        transform.DORotate(new Vector3(0,180,18), 0.5f, RotateMode.FastBeyond360).SetLoops(-1, LoopType.Yoyo);
+        transform.DORotate(new Vector3(0,180,18), 0.5f, RotateMode.FastBeyond360).SetLoops(-1);
+        transform.DOScale(new Vector3(0.5f,0.5f,0.5f), 0.5f).SetLoops(-1, LoopType.Yoyo);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

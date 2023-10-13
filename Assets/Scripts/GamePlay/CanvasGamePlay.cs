@@ -4,23 +4,58 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CanvasGamePlay : MonoBehaviour
 {
+
     [SerializeField] private GameObject panel_gameMode;
     [SerializeField] private GameObject gameName;
     private int index_Scene = -1;
+
+    [SerializeField] private Sprite[] ob_layer;
+    [SerializeField] private GameObject panel_gameMode,loadTime, panel_maintenance;
+    private int index_Scene = -1,time=3;
+
     public void playNow()
     {
         panel_gameMode.SetActive(true);
         gameName.SetActive(false);
     }
+   IEnumerator maintenance()
+    {
+        panel_maintenance.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        panel_maintenance.SetActive(false);
+    }
     public void setSelectGame(int index)
     {
-        index_Scene = index;
-        StartCoroutine(LoadGameSceneCoroutine());
+        if (index > 2)
+        {
+            StartCoroutine(maintenance());
+        }
+        else
+        {
+            index_Scene = index;
+            panel_gameMode.SetActive(false);
+            loadTime.SetActive(true);
+            InvokeRepeating(nameof(loadTiming), 0, 1);
+        }
+       
+      
     }
-
+    public void loadTiming()
+    {
+        if (time < 0)
+        {
+            CancelInvoke(nameof(loadTiming));
+            LoadGameScene();
+            return;
+        }
+        loadTime.GetComponent<Image>().sprite = ob_layer[time];
+        time -= 1;
+        
+    }
     public void Exit()
     {
         panel_gameMode.SetActive(false);
@@ -28,14 +63,8 @@ public class CanvasGamePlay : MonoBehaviour
     }
 
     // Coroutine để chuyển scene sau một khoảng thời gian đợi.
-    IEnumerator LoadGameSceneCoroutine()
+    public void LoadGameScene()
     {
-        // Thực hiện các hành động cần thiết trước khi chuyển scene (nếu cần).
-        Debug.Log("Preparing to load the game scene...");
-
-        // Đợi một khoảng thời gian (ví dụ: 2 giây).
-        yield return new WaitForSeconds(2f);
-
         // Chuyển đến scene "GameScene".
         SceneManager.LoadScene(index_Scene);
     }

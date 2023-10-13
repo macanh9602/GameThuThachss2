@@ -27,6 +27,7 @@ public class defeat : MonoBehaviour
     }
     public void GetPanelLoss()
     {
+
         Oj_canvas.Panel_endGame("Thử thách thất bại !",false);
         Time.timeScale = 0f;
     }
@@ -40,5 +41,7 @@ public class defeat : MonoBehaviour
             
             //collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
         }
+
+        Oj_canvas.Panel_endGame("Thu thach that bai !",false);
     }
 }
