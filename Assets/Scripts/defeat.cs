@@ -27,9 +27,7 @@ public class defeat : MonoBehaviour
     }
     public void GetPanelLoss()
     {
-
         Oj_canvas.Panel_endGame("Thử thách thất bại !",false);
-        Time.timeScale = 0f;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
