@@ -22,7 +22,7 @@ public class CanVas : MonoBehaviour
     public void btn_menu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(0);
     }
     public void btn_newGame()
     {  
