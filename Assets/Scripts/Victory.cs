@@ -20,6 +20,6 @@ public class Victory : MonoBehaviour
    
     public void GetPanelWin()
     {
-        Oj_canvas.Panel_endGame("Chúc mừng bạn đã qua thử thách !",true); 
+        Oj_canvas.Panel_endGame("Chuc mung ban vuot qua thu thach !",true); 
     }
 }

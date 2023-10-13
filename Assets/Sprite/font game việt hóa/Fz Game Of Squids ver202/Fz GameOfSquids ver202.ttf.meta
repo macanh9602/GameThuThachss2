@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 0b03c6d8b0a122d4fb17562b29c8474c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Fz Game Of Squids ver202
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 5376a84ade36f8e4d9d187338bfd3429, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

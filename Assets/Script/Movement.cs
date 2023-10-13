@@ -1,59 +1,123 @@
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Windows;
 
 public class Movement : MonoBehaviour
 {
-    Rigidbody2D rb;
-
-    Animator animator;
-
+    public musicControll musicControll;
+    private Rigidbody2D rb;
+    private Animator animator;
+    private Vector2 vecGravity;
     [SerializeField] float speed = 70f; // toc chay
-
     [SerializeField] float jumpSpeed = 5f;
-
-    Vector2 vecGravity;
     [SerializeField] float newtonPower = 0f;
+    private CapsuleCollider2D thisCollision;
+    private BoxCollider2D footCollision;
 
-    CircleCollider2D thisCollision;
-    BoxCollider2D footCollision;
+    public bool onState = false;
+    public HookController dongdoc;
+
+
+    [SerializeField] private SpriteRenderer sprite;
+
+    private bool isGround, isWalk;
+    public Vector3 currentPos;
 
     // Start is called before the first frame update
     void Start()
     {
+        currentPos = transform.position;
         vecGravity = new Vector2(0f, -Physics2D.gravity.y);
-        Debug.Log(Physics2D.gravity);
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        thisCollision = GetComponent<CircleCollider2D>();
+        thisCollision = GetComponent<CapsuleCollider2D>();
         footCollision = GetComponent<BoxCollider2D>();
         rb.velocity = Vector3.zero;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        float xInput = UnityEngine.Input.GetAxisRaw("Horizontal");
-        //Debug.Log(xInput);
-        Move(xInput);
-        FlipFace();
+        if (GameManage.instance.isPlay)
+        {
+            float xInput = UnityEngine.Input.GetAxisRaw("Horizontal"); // 
+            checkAnimation();
+            Move(xInput);
+            animator.SetFloat("yVelocity", rb.velocity.y); // hoat canh nhay len xuong theo van toc vua y
+            Jump();
+            DongDoc();
+        }
+            
 
-        animator.SetFloat("yVelocity", rb.velocity.y); // hoat canh nhay len xuong theo van toc vua y
-        Jump();
+        //if (GameManage.instance.isPlay)
+        //{
+        //    float xInput = UnityEngine.Input.GetAxisRaw("Horizontal"); // 
+        //    Move(xInput);
+        //    animator.SetFloat("yVelocity", rb.velocity.y); // hoat canh nhay len xuong theo van toc vua y
+        //    Jump();
+        //}
+        //else
+        //{
+        //    musicControll.runningSound(false);
+        //}
+    }
+    public void checkAnimation()
+    {
+        if (footCollision.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        {
+            isGround = true;
+        }
+        else
+        {
+            isGround = false;
+        }
+        animator.SetBool("isWalk", checkMove());
+        animator.SetBool("isGround", isGround);
+    }
+    public bool checkMove()
+    {
+        if (rb.velocity.x != 0)
+        {
+            isWalk = true;
+            //musicControll.runningSound(true);
+        }
+        else
+        {
+            isWalk = false;
+            //musicControll.runningSound(false);
+        }
+        return isWalk;
+    }
+    public void ResetPlayer()
+    {
+        transform.position = new Vector2(16, 1);
+        animator.SetBool("isDie", false);
+        transform.DOScale(new Vector3(1f, 1f, 1f), 1f);
+
     }
     void Move(float _xInput)
     {
-        rb.velocity = new Vector2(_xInput * speed, rb.velocity.y);
-        bool IsMove = Mathf.Abs(rb.velocity.x) > 0;
+        if (footCollision.IsTouchingLayers(LayerMask.GetMask("Ground")) ||  // khi Player dung tren mat dat
+            !thisCollision.IsTouchingLayers(LayerMask.GetMask("Ground")) && // khi Player da lo lung trong khong gian
+            !footCollision.IsTouchingLayers(LayerMask.GetMask("Ground"))
+            )
+        {
+            rb.velocity = new Vector2(_xInput * speed, rb.velocity.y);
+            bool IsMove = Mathf.Abs(rb.velocity.x) > 0;
+            animator.SetBool("isWalk", IsMove);
+            if (_xInput != 0)
+            {
+                //musicControll.runningSound(true);
+            }
+            else
+            {
+                //musicControll.runningSound(false);
 
-        //if (rb.velocity != null)
-        //{
-        animator.SetBool("IsRunning", IsMove);
-
-        //}
+            }
+            FlipFace();
+        }
 
     }
     void FlipFace()
@@ -61,7 +125,7 @@ public class Movement : MonoBehaviour
         bool IsMove = rb.velocity.x != 0;
         if (IsMove)
         {
-            transform.localScale = new Vector3(-Mathf.Sign(rb.velocity.x), transform.localScale.y);
+            transform.localScale = new Vector3(-Mathf.Sign(rb.velocity.x), transform.localScale.y); // thay doi huong di chuyen 
         }
     }
 
@@ -69,55 +133,73 @@ public class Movement : MonoBehaviour
     {
         if (UnityEngine.Input.GetKeyDown(KeyCode.Space) && footCollision.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
-            //Debug.Log("jump");
-            //rb.AddForce(new Vector2(0, jumpForce));
-            rb.velocity = new Vector2(0f, jumpSpeed);
-            animator.SetBool("IsJump", true);
-
+            rb.velocity = new Vector2(rb.velocity.x, jumpSpeed); //  play nhay len cao
+            animator.SetBool("isJump", true);
         }
-
         if (rb.velocity.y < 0)   // luc huong xuong dat
         {
             rb.velocity -= newtonPower * vecGravity * Time.deltaTime;
-
-
-            //Debug.Log(rb.velocity);
         }
         if (rb.velocity.y <= 0 && thisCollision.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
-            animator.SetBool("IsJump", false);
+            animator.SetBool("isJump", false);
         }
     }
-
+    public void isDie()
+    {
+        animator.SetBool("isDie", true);
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("MovingObject"))
-        // cham dat hoac cham vat the bay
-        {
 
-            animator.SetBool("IsJump", false);
-
-        }
         if (collision.tag == "Ground")
         // cham dat hoac cham vat the bay
         {
-
-            animator.SetBool("IsJump", false);
+            animator.SetBool("isJump", false);
 
         }
     }
-    //hello
-    /*  void OnCollisionEnter2D(Collision2D collision)
-      {
-          if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("MovingObject"))
-              // cham dat hoac cham vat the bay
-          {
+    ///abc adajfbn
+    private void DongDoc()
+    {
+        //Debug.Log(dongdoc is not null);
+        if (UnityEngine.Input.GetKeyDown(KeyCode.X))
+        {
+            if (!onState && dongdoc is not null)
+            {
+                gameObject.transform.parent = dongdoc.transform;
 
-              animator.SetBool("IsJump", false);
+                //transform.DOMove(target.transform.position, time).SetEase(ease);
+                dongdoc.action(gameObject);
 
-          }
+            }
+            else
+            {
+                gameObject.transform.parent = null;
+                gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+                gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
 
-      }*/
+
+
+            }
+            onState = !onState;
+        }
+   
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "bullet")
+        {
+            this.isDie();
+            this.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+
+        }
+    }
+
+     
+    //
+
 }
+
 
 

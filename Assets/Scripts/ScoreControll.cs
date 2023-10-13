@@ -33,7 +33,7 @@ public class ScoreControll : MonoBehaviour
         index3 = score1;
         if (score2 < 0)
         {
-            Oj_canvas.Panel_endGame("Thử thách thất bại !",false);
+            Oj_canvas.Panel_endGame("Thu thach that bai !",false);
             CancelInvoke(nameof(ChangeSprite));
         }
         Layer_Object[0].GetComponent<Image>().sprite = Image[index1];
