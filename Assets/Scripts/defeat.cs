@@ -26,6 +26,6 @@ public class defeat : MonoBehaviour
     }
     public void GetPanelLoss()
     {
-        Oj_canvas.Panel_endGame("Thử thách thất bại !",false);
+        Oj_canvas.Panel_endGame("Thu thach that bai !",false);
     }
 }

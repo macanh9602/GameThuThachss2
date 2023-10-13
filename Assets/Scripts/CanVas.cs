@@ -57,13 +57,13 @@ public class CanVas : MonoBehaviour
         }
         t_TopPlayer = "Top Player: " + PlayerPrefs.GetString("topname")+"  " + PlayerPrefs.GetInt("topscore");
         panel_end.SetActive(true);
-        txtHeader.DOText(text, 2f, true) // Văn bản ban đầu và thời gian hoàn thành tween.
-          .SetDelay(1f);
-        panel_end.SetActive(true);
-        txtTopPlayer.DOText(t_TopPlayer, 2f, true) // Văn bản ban đầu và thời gian hoàn thành tween.
+        txtHeader.DOText(text, 1f, true) // Văn bản ban đầu và thời gian hoàn thành tween.
           .SetDelay(0.1f);
         panel_end.SetActive(true);
-        txtPlayer.DOText(t_Player, 2f, true) // Văn bản ban đầu và thời gian hoàn thành tween.
+        txtTopPlayer.DOText(t_TopPlayer, 1f, true) // Văn bản ban đầu và thời gian hoàn thành tween.
+          .SetDelay(0.1f);
+        panel_end.SetActive(true);
+        txtPlayer.DOText(t_Player, 1f, true) // Văn bản ban đầu và thời gian hoàn thành tween.
           .SetDelay(0.1f);
     }
 }
