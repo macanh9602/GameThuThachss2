@@ -21,12 +21,14 @@ public class CanVas : MonoBehaviour
     }
     public void btn_menu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(2);
     }
     public void btn_newGame()
     {
         panel_start.SetActive(true);
         panel_end.SetActive(false);
+        Time.timeScale = 1f;
     }
     public void btn_pause()
     {

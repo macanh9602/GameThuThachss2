@@ -126,6 +126,7 @@ public class playerControll : MonoBehaviour
     public void isDie()
     {
         animator.SetBool("isDie", true);
+        transform.DOScale(new Vector3(0.8f, 0.8f, 0.8f), 3f);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

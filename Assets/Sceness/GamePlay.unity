@@ -2687,7 +2687,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 438ce30ecd89429448a387e34aea795f, type: 3}
     m_FontSize: 50
     m_FontStyle: 1
     m_BestFit: 0
@@ -2699,7 +2699,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "v\u01B0\u1EE3t qua th\u1EED th\xE1ch"
+  m_Text: "<color=\"red\">Game </color><color=\"orange\">Thu </color><color=\"green\">Thach
+    </color> \n"
 --- !u!222 &1194015504
 CanvasRenderer:
   m_ObjectHideFlags: 0
