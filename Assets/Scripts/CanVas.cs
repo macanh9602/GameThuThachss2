@@ -55,14 +55,12 @@ public class CanVas : MonoBehaviour
         {
             t_Player = "Player: " + textPlayer.text + " " + Score.score2;
         }
-        t_TopPlayer = "Top Player: " + PlayerPrefs.GetString("topname")+"  " + PlayerPrefs.GetInt("topscore");
         panel_end.SetActive(true);
+        t_TopPlayer = "Top Player: " + PlayerPrefs.GetString("topname")+"  " + PlayerPrefs.GetInt("topscore");
         txtHeader.DOText(text, 1f, true) // Văn bản ban đầu và thời gian hoàn thành tween.
           .SetDelay(0.1f);
-        panel_end.SetActive(true);
         txtTopPlayer.DOText(t_TopPlayer, 1f, true) // Văn bản ban đầu và thời gian hoàn thành tween.
           .SetDelay(0.1f);
-        panel_end.SetActive(true);
         txtPlayer.DOText(t_Player, 1f, true) // Văn bản ban đầu và thời gian hoàn thành tween.
           .SetDelay(0.1f);
     }

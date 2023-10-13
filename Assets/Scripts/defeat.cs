@@ -41,7 +41,5 @@ public class defeat : MonoBehaviour
             
             //collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
         }
-
-        Oj_canvas.Panel_endGame("Thu thach that bai !",false);
     }
 }
