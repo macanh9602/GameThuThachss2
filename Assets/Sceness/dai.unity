@@ -4919,7 +4919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlay: 0
-  gameObjectHidden:
+  gameObjectAppear:
   - {fileID: 2110278490}
   - {fileID: 1245021761}
   - {fileID: 545434257}
