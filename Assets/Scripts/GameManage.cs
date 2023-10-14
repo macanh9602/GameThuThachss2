@@ -7,7 +7,7 @@ public class GameManage : MonoBehaviour
 {
     public static GameManage instance;
     public bool isPlay;
-    public GameObject[] gameObjectHidden;
+   // public GameObject[] gameObjectHidden;
     public GameObject[] gameObjectAppear;
     public ScoreControll scoreControll;
     public playerControll player;
@@ -26,13 +26,9 @@ public class GameManage : MonoBehaviour
 
         player.ResetPlayer();
         scoreControll.ResetScore();
-        for (int i = 0; i < gameObjectHidden.Length; i++)
-        {
-            gameObjectHidden[i].SetActive(true);
-        }
         for (int i = 0; i < gameObjectAppear.Length; i++)
         {
-            gameObjectAppear[i].SetActive(false);
+            gameObjectAppear[i].SetActive(true);
         }
         GameObject ob_Elevator = GameObject.Find("Elevator(Clone)");
         if (ob_Elevator != null) { Destroy(ob_Elevator); }

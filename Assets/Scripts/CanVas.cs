@@ -17,6 +17,8 @@ public class CanVas : MonoBehaviour
     public void btn_play()
     {
         panel_start.SetActive(false);
+        panel_end.SetActive(false);
+        panel_pause.SetActive(false);
         GameManage.instance.play_game();
     }
     public void btn_menu()
@@ -42,6 +44,7 @@ public class CanVas : MonoBehaviour
     }
     public void Panel_endGame(string text,bool winOrLoss)
     {
+        panel_end.SetActive(true);
         if (Score.score2 > PlayerPrefs.GetInt("topscore")&& winOrLoss==true)
         {
             PlayerPrefs.SetInt("topscore", Score.score2);
@@ -55,7 +58,6 @@ public class CanVas : MonoBehaviour
         {
             t_Player = "Player: " + textPlayer.text + " " + Score.score2;
         }
-        panel_end.SetActive(true);
         t_TopPlayer = "Top Player: " + PlayerPrefs.GetString("topname")+"  " + PlayerPrefs.GetInt("topscore");
         txtHeader.DOText(text, 1f, true) // Văn bản ban đầu và thời gian hoàn thành tween.
           .SetDelay(0.1f);

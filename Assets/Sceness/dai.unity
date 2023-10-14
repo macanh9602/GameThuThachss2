@@ -4926,9 +4926,6 @@ MonoBehaviour:
   - {fileID: 985422216}
   - {fileID: 548172602}
   - {fileID: 1354604754}
-  gameObjectAppear:
-  - {fileID: 3456971784561579779}
-  - {fileID: 90250060}
   scoreControll: {fileID: 1440780994}
   player: {fileID: 8962573161121486090}
   bridgeControl: {fileID: 0}

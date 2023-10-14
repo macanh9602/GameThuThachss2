@@ -19,9 +19,13 @@ public class defeat : MonoBehaviour
              collision.gameObject.CompareTag("gear") 
             )
         {
-            p.isDie();
-            GameManage.instance.end_game();
-            Invoke(nameof(GetPanelLoss), 1f);
+            if(GameManage.instance.isPlay)
+            {
+                p.isDie();
+                GameManage.instance.end_game();
+                Invoke(nameof(GetPanelLoss), 1f);
+            }
+           
             //  Destroy(gameObject, 2);
         }
     }
